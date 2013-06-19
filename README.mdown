@@ -1,0 +1,5 @@
+# これはなに
+社内TDDWCで 'The Bowlin Game Kata' を写経した結果です。
+
+TheBowlingGameKata
+http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
