@@ -12,17 +12,17 @@ class Game
 
   def score
     score = 0
-    index = 0
+    frame_index = 0
     0.upto(9) do |frame| 
-      if strike?(index)
-        score += 10 + strike_bonus(index)
-        index += 1
-      elsif spare?(index)
-        score += 10 + spare_bonus(index)
-        index += 2
+      if strike?(frame_index)
+        score += 10 + strike_bonus(frame_index)
+        frame_index += 1
+      elsif spare?(frame_index)
+        score += 10 + spare_bonus(frame_index)
+        frame_index += 2
       else
-        score += @rolls[index] + @rolls[index + 1]
-        index += 2
+        score += @rolls[frame_index] + @rolls[frame_index + 1]
+        frame_index += 2
       end
     end
     return score
